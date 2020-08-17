@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Portfolio</title>
+            <!-- jQuery.jsの読み込み -->
+            <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+
+            <!-- スムーズスクロール部分の記述 -->
+            <script>
+            $(function(){
+            // #で始まるアンカーをクリックした場合に処理
+            $('a[href^=#]').click(function() {
+                var headerHight = 100;
+                // スクロールの速度
+                var speed = 200; // ミリ秒
+                // アンカーの値取得
+                var href= $(this).attr("href");
+                // 移動先を取得
+                var target = $(href == "#" || href == "" ? 'html' : href);
+                // 移動先を数値で取得
+                var position = target.offset().top-headerHight; //ヘッダの高さ分位置をずらす
+                // スムーススクロール
+                $('body,html').animate({scrollTop:position}, speed, 'swing');
+                return false;
+            });
+            });
+            </script>
+    </head>
+    <body id="home">
+        <header class="site-header">
+            <link rel="stylesheet" href="./css/style.css">
+            <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
+            
+            <h1 class="site-logo" ><a href="index.html">Portfolio</a></h1>
+            <nav class="gnav">
+                <ul class="gnav-menu">
+                    <li class="gnav-menu-items">
+                        <div class="btn-wrap">
+                            <a href="#top" class="btn btn-border-shadow">Top</a>
+                        </div>
+                        </li>
+                    <li class="gnav-menu-items">
+                        <div class="btn-wrap">
+                            <a href="#profile" class="btn btn-border-shadow">Profile</a>
+                        </div>
+                    </li>
+                    <li class="gnav-menu-items">
+                        <div class="btn-wrap">
+                            <a href="#portfolio" class="btn btn-border-shadow">Portfolio</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="top" id="top">
+                <h1 class="top-title">YPWeb</h1>
+                <img class="bass-img" src="images/ベース　ロゴ白.png" alt="ベース ロゴ" >
+            </div>
+            <div class="profile" id="profile">
+                <h2 class="title">Profile</h2>
+                <div class='profile-contents'>
+                    <p class="logo-img"></p>
+                    <p class="profile-text">岐阜県出身の情報系大学院生。大学１年の時にC言語を授業で勉強したことをきっかけにプログラミングと出会いのらりくらりと勉強中。</p>
+                </div>
+            </div>            
+            <div class="portfolio" id="portfolio">
+                <h2 class="title">Portfolio</h2>
+            </div>
+        </main>
+
+        <footer>
+            ©︎2020　yamato<br>
+            <a href="https://www.freepik.com/vectors/background">Background vector created by freepik - www.freepik.com</a>
+        </footer>
+    </body>
+</html>
