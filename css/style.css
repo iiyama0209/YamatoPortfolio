@@ -26,7 +26,7 @@ footer{
 
 .site-header{
     z-index: 5;
-    background-color:rgb(255, 208, 0);
+    background-color:#ffd000;
     display: -webkit-flex;
     display: flex;
     justify-content: space-between;
@@ -496,3 +496,35 @@ main{
           font-size: 16px;
         }
       }
+
+/*Emailend*/
+
+.EndMessage{
+  background-color: #ffffff;
+  height:300px;
+  width:80%;
+  margin : 0 auto;
+  margin-bottom: 2%;
+}
+
+.EndMessage-text{
+  text-align: center;
+  font-size: 30px;
+  padding-top: 40px;
+  
+}
+
+a.btn-border {
+  border: 2px solid #000;
+  border-radius: 0;
+  background: #ffd000;
+}
+
+a.btn-border:hover {
+  color: #ffd000;
+  background: #000;
+}
+
+.home-btn{
+  text-align: center;
+}
