@@ -197,11 +197,11 @@ main{
 
 .logo-img{
     background-image: url(../images/logo.png);
-    width:  auto;
-    height: 100px;
+    width:  200px;
+    height: 200px;
     border: 4px solid #000000;
     border-radius: 50%;
-    margin-left:15%;
+    margin-left:0%;
     background-size: 150% 150%;
     background-position: center center;
 }
@@ -280,6 +280,8 @@ main{
     /* Twitter */
     .fl_tw1{
     background:#55acee;
+    margin-top: 5px;
+    margin-bottom: 5px;
     }
     /* 問い合わせ */
     .fl_ma1{
