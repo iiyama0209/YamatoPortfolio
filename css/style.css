@@ -530,3 +530,24 @@ a.btn-border:hover {
 .home-btn{
   text-align: center;
 }
+
+/*HP紹介ページ*/
+.HP-intro{
+  background-color: #ffffff;
+  height:1200px;
+  width:80%;
+  margin : 0 auto;
+}
+
+.HP-img{
+  width:60%;
+  
+}
+
+.HP-img-div{
+  margin : 0 auto;
+}
+
+.HP-title{
+  text-align: center;
+}
