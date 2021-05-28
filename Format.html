@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Portfolio</title>
+            <!-- jQuery.jsの読み込み -->
+            <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+            <!--アイコンの読み込み-->
+            <script src="https://kit.fontawesome.com/dffdcfea06.js" crossorigin="anonymous"></script>
+            <!-- スムーズスクロール部分の記述 -->
+            <script>
+            $(function(){
+            // #で始まるアンカーをクリックした場合に処理
+            $('a[href^=#]').click(function() {
+                var headerHight = 79;
+                // スクロールの速度
+                var speed = 200; // ミリ秒
+                // アンカーの値取得
+                var href= $(this).attr("href");
+                // 移動先を取得
+                var target = $(href == "#" || href == "" ? 'html' : href);
+                // 移動先を数値で取得
+                var position = target.offset().top-headerHight; //ヘッダの高さ分位置をずらす
+                // スムーススクロール
+                $('body,html').animate({scrollTop:position}, speed, 'swing');
+                return false;
+            });
+            });
+            </script>
+
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body id="home">
+        <header class="site-header">
+ 
+            <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
+            
+            <h1 class="site-logo" ><a href="index.html">Portfolio</a></h1>
+            <nav class="gnav">
+                <ul class="gnav-menu">
+                    <li class="gnav-menu-items">
+                        <div class="btn-wrap">
+                            <a href="./index.html" class="btn btn-border-shadow">Home</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+        <main> 
+
+
+
+            
+            <ul class="snsbtniti">
+                <li><a href="https://twitter.com/bass_base_3d" class="flowbtn3 fl_tw1"><i class="fab fa-twitter"></i><div>Twitter</div></a></li>
+                <li><a href="./EmailForm.html" class="flowbtn3 fl_ma1"><i class="far fa-envelope"></i><div>Contact</div></a></li>
+            </ul>
+        </main>
+
+        <footer>
+            ©︎2020　yamato<br>
+            <a href="https://www.freepik.com/vectors/background">Background vector created by freepik - www.freepik.com</a>
+        </footer>
+    </body>
+</html>
