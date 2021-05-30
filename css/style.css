@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+@font-face {
+	font-family: 'KosugiMaru-Regular';
+	src: url(../fonts/Kosugi_Maru/KosugiMaru-Regular.ttf);
+}
+
 #home{
     background-image: url(../images/3176011.jpg);
     background-attachment: fixed;
@@ -7,6 +12,8 @@
     background-position: center top;
     background-size: cover;
 }
+
+
 
 body{
     background-color: #ffffff;
@@ -139,7 +146,7 @@ a:link, a:visited, a:hover, a:active {
   }
 
 p{
-    font-family: "M PLUS 1p";
+    font-family: 'KosugiMaru-Regular';
     font-size:15px;
 }
 main{
@@ -215,21 +222,23 @@ main{
 
 .protfolio-contents-upper,.protfolio-contents-under{
     display: flex;
-    margin:0 5%;
+    margin:0 auto;
 }
 
 .product{
     width:50%;
-    margin: 0 5%;
+    margin: 2% 6%;
 }
 
 .products-img{
-    width: 100%;
-    margin:4% 4%;
+    height:130px;
+    width:240px;
+    object-fit: cover; 
     -webkit-transform: scale(1);
     transform: scale(1);
     -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
+    display: block;
 }
 
 
@@ -243,15 +252,12 @@ main{
 }
 
 .caption {
+  text-align:center;
 	font-size: 130%;
-	text-align: center;
-    color:black;
+  color:black;
 
 }
 
-.mask{
-    text-align: center;
-}
 
 .title{
     text-align: center;
@@ -531,23 +537,45 @@ a.btn-border:hover {
   text-align: center;
 }
 
-/*HP紹介ページ*/
-.HP-intro{
+/*PF紹介ページ*/
+.PF-intro{
   background-color: #ffffff;
   height:1200px;
   width:80%;
   margin : 0 auto;
+  font-size: 20px;
+  padding-top: 30px;
+  font-family:"KosugiMaru-Regular";
 }
 
-.HP-img{
+.PF-img{
   width:60%;
-  
+  margin:0 auto;
 }
 
-.HP-img-div{
-  margin : 0 auto;
-}
-
-.HP-title{
+.PF-img-div{
   text-align: center;
+  padding-top: 30px;
+  background-color:#fff;
+
+}
+
+.PF-title{
+  text-align: center;
+}
+
+.PF-text{
+  background-color: #fff;
+  margin: 5% auto;
+	text-align: center;
+	display: block;
+}
+
+.PF-main-text{
+	text-align: left;
+	display: inline-block;
+}
+
+.subtitle{
+  font-size: 20px;
 }
