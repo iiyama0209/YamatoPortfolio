@@ -254,6 +254,7 @@ main{
 .caption {
   text-align:center;
 	font-size: 130%;
+  margin-top:20px;
   color:black;
 
 }
@@ -541,6 +542,16 @@ a.btn-border:hover {
 .PF-intro{
   background-color: #ffffff;
   height:1200px;
+  width:80%;
+  margin : 0 auto;
+  font-size: 20px;
+  padding-top: 30px;
+  font-family:"KosugiMaru-Regular";
+}
+
+.AR-intro{ /*ロボットアーム紹介ベーじ*/
+  background-color: #ffffff;
+  height:1600px;
   width:80%;
   margin : 0 auto;
   font-size: 20px;
